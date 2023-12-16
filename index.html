@@ -1,39 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Login</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Welcome to NSS Unza</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .login-form {
+            margin: 20px auto;
+            width: 400px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+        }
+        .login-form input[type="text"], .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+        .login-form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .login-form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome Login</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#login-pi">Login PI</a></li>
-            <li><a href="#login-nss-unza">Login NSS Unza</a></li>
-            <li><a href="#login-puss">Login PUSS</a></li>
-            <li><a href="#login-nss">Login NSS</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="login-pi">
-            <!-- Add PI Login form here -->
-        </section>
-        <section id="login-nss-unza">
-            <!-- Add NSS Unza Login form here -->
-        </section>
-        <section id="login-puss">
-            <!-- Add PUSS Login form here -->
-        </section>
-        <section id="login-nss">
-            <!-- Add NSS Login form here -->
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Devansh Patel</p>
-    </footer>
+    <div class="header">
+        <h1>Welcome to NSS Unza</h1>
+    </div>
+    <div class="login-form">
+        <form action="login.php" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+        </form>
+    </div>
 </body>
 </html>
