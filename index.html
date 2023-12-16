@@ -20,11 +20,11 @@
         document.getElementById('loginForm').addEventListener('submit', function(event) {
             event.preventDefault();
 
-            const username = document.getElementById('admin').value;
-            const password = document.getElementById('123').value;
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
 
             // Check if the username and password match the admin credentials
-            if (username === 'admin' && password === 'password') {
+            if (username === 'admin' && password === '123') {
                 // Redirect to the welcome page if the credentials are correct
                 window.location.href = 'welcome.html';
             } else {
