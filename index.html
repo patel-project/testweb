@@ -3,34 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Welcome Login</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Login</h1>
-    <form id="loginForm">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <br>
-        <button type="submit">Login</button>
-    </form>
-    <script>
-        document.getElementById('loginForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-
-            // Check if the username and password match the admin credentials
-            if (username === 'admin' && password === '123') {
-                // Redirect to the welcome page if the credentials are correct
-                window.location.href = 'https://github.com/patel-project/testweb/blob/main/welcome.html';
-            } else {
-                alert('Incorrect username or password');
-            }
-        });
-    </script>
+    <header>
+        <h1>Welcome Login</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#login-pi">Login PI</a></li>
+            <li><a href="#login-nss-unza">Login NSS Unza</a></li>
+            <li><a href="#login-puss">Login PUSS</a></li>
+            <li><a href="#login-nss">Login NSS</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="login-pi">
+            <!-- Add PI Login form here -->
+        </section>
+        <section id="login-nss-unza">
+            <!-- Add NSS Unza Login form here -->
+        </section>
+        <section id="login-puss">
+            <!-- Add PUSS Login form here -->
+        </section>
+        <section id="login-nss">
+            <!-- Add NSS Login form here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Devansh Patel</p>
+    </footer>
 </body>
 </html>
